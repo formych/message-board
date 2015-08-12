@@ -2,9 +2,10 @@
 	class db_class
 	{
 	    var $host = "10.9.1.188";
-		var $user = "aCksprlkqpd2GCso";
-		var $pwd = "qKWTzoX1lbYCngTF";
-		var $db = "cf_d5889736_2783_43d8_bd37_333f28639fd7";
+		var $user = "gn03r9M3hUlg1AXQ";
+		var $pwd = "edYf6a3CR58mXQJm";
+		var $db = "cf_745400cf_973d_4651_b8b4_742b36be5444";
+username: gn03r9M3hUlg1AXQ
         		
     
 		function __construct()
