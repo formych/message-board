@@ -1,12 +1,10 @@
 <?php     
 	class db_class
 	{
-	    //每次都得改
 	    var $host = "10.9.1.188";
 		var $user = "gn03r9M3hUlg1AXQ";
 		var $pwd = "edYf6a3CR58mXQJm";
 		var $db = "cf_745400cf_973d_4651_b8b4_742b36be5444";
-username: gn03r9M3hUlg1AXQ
         		
     
 		function __construct()
