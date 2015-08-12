@@ -1,0 +1,31 @@
+<html>
+    <head>
+	    <meta htttp-equiv="Conten-Type" content="text/html"; charset="utf-8" />
+		<title>留言-发送</title>		
+		<link id="css" rel="stylesheet" type="text/css" href="../../css/all.css" />		
+		<script type="text/javascript" src="../../js/*.js">   </script>
+	</head>
+	<body>
+	    <{include file="./common/top.html" }>
+		<center>
+	    <form action="./messageDo.php" method="post">
+		    
+		    <h2>新留言:</h2>
+			<table border="1">
+				<tr><td>接收人:</td><td><input type="text" name="getter" value="<{$smarty.get.name}>"/> </td>
+                <tr><td>内&nbsp;&nbsp;&nbsp;容:</td><td><textarea  name="content" > </textarea></td>
+			</table>
+            <div >
+				<input type="submit" value="发送" /> 
+				<input type="reset" value="重填" /> 
+				<input type="hidden" name="p_type" value="create" />
+				<input type="hidden" name="page_id" value="<{$smarty.get.page_id}>" /> 
+				<input type="hidden" name="url" value="<{$smarty.get.url}>" /> 
+			</div>
+			
+			</table>
+			
+        </form>
+		</center>
+		<{include file="./common/footer.html" }>
+    </body>		

@@ -1,0 +1,43 @@
+<html>
+    <head>
+	    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+		<title>留言-收到</title>		
+		<link id="css" rel="stylesheet" type="text/css" href="../../css/all.css" />		
+		<script type="text/javascript" src="../../js/*.js">   </script>
+		<{include file="../../js/checkPageId.js" }>
+	</head>
+	<script type="text/javascript" src="../../js/checkPageId.js"></script>
+	<body>
+	    <{include file="./common/top.html" }>
+		<center>
+	    <h1>
+		<a href="./createMessage.php?page_id=<{$page_id}>&url=rcvdMessageList.php"> 写留言</a>
+        <a href="./sentMessageList.php"> 已发送</a> 		
+		<a href="../logout.php"> 退出 </a></h1> 
+		<h2>留言-收到: </h2>
+	    <table border="1">
+		    <tr><td>发送者</td><td>内容</td><td>时间</td><td>回复</td><td>删除</td</tr>
+			<{foreach from=$msg  item=temp key=k}>
+			    <tr><td><{$temp[0]}></td>
+				    <td width="200px" ><{$temp[2]}></td>	
+					<td><{$temp[3]}></td>
+					<td><a href="./createMessage.php?name=<{$temp[0]}>&page_id=<{$page_id}>&url=rcvdMessageList.php">回复</a>
+					</td>
+					<td><a href="./messageDo.php?p_type=delete&id=<{$temp[4]}>&page_id=<{$page_id}>&url=rcvdMessageList.php">删除</a>
+					</td>
+				</tr>
+			<{/foreach}>			
+		</table>
+		<{$navi}><br/>
+		跳转页数
+		<input type="text" id="page_id" />
+		<input type="button" value="跳转"  id = "jump" onclick="checkPageId()" />  
+		</center>
+		<{include file="./common/footer.html" }>
+		
+	
+	</body>
+ 
+
+
+</html>
