@@ -1,10 +1,10 @@
 <?php     
 	class db_class
 	{
-	    var $host = "localhost";
-		var $user = "root";
-		var $pwd = "123456";
-		var $db = "mes_board";
+	    var $host = "10.9.1.188";
+		var $user = "aCksprlkqpd2GCso";
+		var $pwd = "qKWTzoX1lbYCngTF";
+		var $db = "cf_d5889736_2783_43d8_bd37_333f28639fd7";
         		
     
 		function __construct()
